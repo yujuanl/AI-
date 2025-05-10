@@ -3,10 +3,7 @@ from openai import OpenAI  # pip install openai -i 清华源
 import os
 from dotenv import load_dotenv  # pip install python-dotenv
 load_dotenv()     # 加载环境变量 OPENAI_API_KEY  OPENAI_BASE_URL
-client = OpenAI(
-    api_key=os.getenv("sk-8336d6980b104f6aba7f4d82b35da9bb"), # 如果您没有配置环境变量，请在此处用您的API Key进行替换
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",  # 填写DashScope服务的base_url
-)
+client = OpenAI()
 from docx import Document
 
 
